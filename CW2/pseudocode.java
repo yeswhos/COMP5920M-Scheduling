@@ -10,13 +10,15 @@ public class pseudocode{
     //method for initialize
     public static void initialize(int[] ranking){
         //Run each LLH independently for 10 times
+        total = getTotal;
         for(int i = 0; i < 10; i++){
             call LLH1;
         }
         //get the total constraint violations after 10 times LLH1
         total1 = getTotal();
         //numerical the performance of LLH1
-        total1 = (total1 / 4027 /10) * 100; 
+        //Using the total constraint violations at the very begining minus the current violations
+        total1 = total - total1;
         //put it into the array, storing the ranking
         ranking.append(total1);
         //restart, prepare for the next LLH
@@ -27,7 +29,7 @@ public class pseudocode{
             call LLH2;
         }
         total2 = getTotal();
-        total2 = (total2 / 4027 /10) * 100; 
+        total2 = total - total1;
         ranking.append(total2);
         restart();
 
@@ -35,26 +37,26 @@ public class pseudocode{
     }
    
     //find the minimum, which is the best performance in the ranking array
-    public static int findMin(int [] a){
-        int min;
+    public static int findMax(int [] a){
+        int max;
         int tmp = a[0];
         for(int i = 0; i < length.a - 1; i++){
-            if(a[i] < tmp){
-                min = i;
+            if(a[i] > tmp){
+                max = i;
                 tmp = a[i];
             }
         }
-        return min;
+        return max;
     }
 
     //For those LLH who has not been selected for a while
     public static void rarely(){
         //if 10 attempts and none of them are LLH1, then assign 15 weight to it.
         if ((counter1 / counter) < 0.1){
-            total1 += 15;
+            total1 += 50;
         }
         else if ((counter2 / counter) < 0.1){
-            total1 += 15;
+            total1 += 50;
         }
         //I'm not gonna write all of it in here, cause they all the same
     }
@@ -74,15 +76,15 @@ public class pseudocode{
             int total = getTotal();
             //For those LLH who has not been selected for a while
             rarely();
-            //find the minimum, which is the best performance in the ranking array
-            findMin(ranking);
-            switch(min){
+            //find the max, which is the best performance in the ranking array
+            findMax(ranking);
+            switch(max){
                 case 0:
                     call LLH1;
                     //update it's performance
                     //to judge it's performance is to use the total1 (newly total constraint violations) divide by the previous total
                     //then multiply 100 to make it as integer, then replace the corresponding number in the ranking array
-                    total1 = (total1 / total) * 100;
+                    total1 = total - total1;
                     ranking[0] = total1;
                     //update counter for LLH1
                     counter1++;
@@ -107,7 +109,7 @@ public class pseudocode{
                 //the same as above
             }
             
-        }while(total > 50);
+        }while(total > 20);
 
     }
 

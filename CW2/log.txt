@@ -1,0 +1,129 @@
+"LLH1 total constraint violations after 10 time is:",1926
+"performance is:",230.4
+"LLH2 total constraint violations after 10 time is:",1333
+"performance is:",299.4
+"LLH3 total constraint violations after 10 time is:",1925
+"performance is:",220.1
+"LLH4 total constraint violations after 10 time is:",1123
+"performance is:",290.7
+"LLH5 total constraint violations after 10 time is:",923
+"performance is:",310.5
+"LLH6 total constraint violations after 10 time is:",319
+"performance is:",370.8
+"array is:",230," "
+"array is:",299," "
+"array is:",220," "
+"array is:",291," "
+"array is:",310," "
+"array is:",371," "
+5
+"select LLH6 this time"
+"and the performance is",1602
+"select LLH6 this time"
+"and the performance is",507
+"select LLH6 this time"
+"and the performance is",489
+"select LLH6 this time"
+"and the performance is",102
+"select LLH5 this time"
+"and the performance is",197
+"select LLH2 this time"
+"and the performance is",200
+"select LLH4 this time"
+"and the performance is",101
+"select LLH1 this time"
+"and the performance is",101
+"select LLH3 this time"
+"and the performance is",1
+"select LLH2 this time"
+"and the performance is",100
+"select LLH5 this time"
+"and the performance is",0
+"assign weight to LLH1"
+"assign weight to LLH3"
+"assign weight to LLH4"
+"select LLH1 this time"
+"and the performance is",1
+"assign weight to LLH3"
+"assign weight to LLH4"
+"select LLH4 this time"
+"and the performance is",0
+"assign weight to LLH3"
+"select LLH3 this time"
+"and the performance is",2
+"select LLH6 this time"
+"and the performance is",199
+"select LLH6 this time"
+"and the performance is",98
+"select LLH2 this time"
+"and the performance is",0
+"select LLH6 this time"
+"and the performance is",299
+"select LLH6 this time"
+"and the performance is",0
+"select LLH3 this time"
+"and the performance is",0
+"select LLH1 this time"
+"and the performance is",0
+"assign weight to LLH4"
+"assign weight to LLH5"
+"select LLH4 this time"
+"and the performance is",0
+"assign weight to LLH5"
+"select LLH5 this time"
+"and the performance is",0
+"select LLH1 this time"
+"and the performance is",1
+"select LLH1 this time"
+"and the performance is",0
+"select LLH1 this time"
+"and the performance is",0
+"select LLH1 this time"
+"and the performance is",0
+"select LLH1 this time"
+"and the performance is",0
+"select LLH1 this time"
+"and the performance is",0
+"select LLH1 this time"
+"and the performance is",4
+"select LLH1 this time"
+"and the performance is",0
+"assign weight to LLH2"
+"assign weight to LLH3"
+"assign weight to LLH4"
+"assign weight to LLH5"
+"select LLH2 this time"
+"and the performance is",0
+"assign weight to LLH3"
+"assign weight to LLH4"
+"assign weight to LLH5"
+"select LLH3 this time"
+"and the performance is",0
+"assign weight to LLH4"
+"assign weight to LLH5"
+"select LLH4 this time"
+"and the performance is",0
+"assign weight to LLH5"
+"select LLH5 this time"
+"and the performance is",0
+"select LLH1 this time"
+"and the performance is",0
+"select LLH1 this time"
+"and the performance is",1
+"select LLH1 this time"
+"and the performance is",1
+"select LLH1 this time"
+"and the performance is",0
+"select LLH1 this time"
+"and the performance is",0
+"select LLH1 this time"
+"and the performance is",2
+"assign weight to LLH2"
+"assign weight to LLH3"
+"assign weight to LLH4"
+"assign weight to LLH5"
+"select LLH2 this time"
+"and the performance is",0
+"assign weight to LLH3"
+"assign weight to LLH4"
+"assign weight to LLH5"
